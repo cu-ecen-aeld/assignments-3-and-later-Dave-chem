@@ -47,9 +47,9 @@ then
 fi
 
 # Clean any previous build artifacts
-# echo "Removing the old writer utility and compiling as a native application"
-# make clean
-# make
+echo "Removing the old writer utility and compiling as a native application"
+make clean
+make
 
 # Use the compiled writer utility instead of writer.sh
 for i in $( seq 1 $NUMFILES)
